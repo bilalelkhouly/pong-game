@@ -20,7 +20,3 @@ class Scoreboard(Turtle):
         self.clear()  # Clear the previous text
         self.write(f"{self.score}", align=ALIGNMENT, font=FONT)  # Write the new score
         self.score += 1
-
-    def game_over(self):
-        self.goto(0, 0)  # Move the turtle to the center of the screen
-        self.write("GAME OVER", align="center", font=("Courier", 24, "normal"))  # Write the game over text
